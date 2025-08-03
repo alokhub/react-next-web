@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from '../styles/HeaderSidebar.module.css';
 
 export default function HeaderSidebar({ open, onClose }) {
@@ -17,11 +18,11 @@ export default function HeaderSidebar({ open, onClose }) {
           ×
         </button>
         <nav className={styles.sidebarNav}>
-          <a href="/">Home</a>
-          <a href="/world">World</a>
-          <a href="/business">Business</a>
-          <a href="/tech">Tech</a>
-          <a href="/sports">Sports</a>
+          <Link href="/">Home</Link>
+          <Link href="/world">World</Link>
+          <Link href="/business">Business</Link>
+          <Link href="/tech">Tech</Link>
+          <Link href="/sports">Sports</Link>
         </nav>
       </aside>
     </>

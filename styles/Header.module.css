@@ -1,3 +1,10 @@
+.date {
+  margin-left: 2rem;
+  color: #bbb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
 /* Sidebar overlay and sidebar styles */
 .sidebarOverlay {
   position: fixed;

@@ -2,21 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  /* background: #f6f8fa; */
+  padding: 1.5rem 0;
+  border-radius: 10px;
 }
 .newsItem {
   display: flex;
   gap: 1.5rem;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  padding: 1rem;
-  transition: background 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.2rem;
+  transition: background 0.2s, box-shadow 0.2s;
 }
 
 .newsItem:hover {
   background: #f0f8ff;
 }
-.newsItem:nth-child(2):hover {
+.newsItem:nth-child(n-1):hover {
   background: #fffbe7;
 }
 .newsItem:nth-child(3):hover {

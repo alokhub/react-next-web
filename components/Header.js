@@ -1,10 +1,14 @@
 
 import { useState } from "react";
+import Link from "next/link";
 import styles from '../styles/Header.module.css';
 import HeaderSidebar from './HeaderSidebar';
+import { getFormattedTodayDate } from '../utils';
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const today = getFormattedTodayDate();
 
   return (
     <>
@@ -21,12 +25,13 @@ export default function Header() {
           <span className={styles.menuBar}></span>
         </div>
         <div className={styles.logo}>NewsHub</div>
+        <div className={styles.date}>{today}</div>
         <nav className={styles.nav}>
-          <a href="/">Home</a>
-          <a href="/world">World</a>
-          <a href="/business">Business</a>
-          <a href="/tech">Tech</a>
-          <a href="/sports">Sports</a>
+          <Link href="/">Home</Link>
+          <Link href="/world">World</Link>
+          <Link href="/business">Business</Link>
+          <Link href="/tech">Tech</Link>
+          <Link href="/sports">Sports</Link>
         </nav>
       </header>
       <HeaderSidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
