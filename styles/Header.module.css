@@ -1,0 +1,122 @@
+/* Sidebar overlay and sidebar styles */
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.2);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.sidebarOverlayOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #222;
+  color: #fff;
+  z-index: 200;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  transition: left 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.sidebarOpen {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 240px;
+  height: 100vh;
+  background: #222;
+  color: #fff;
+  z-index: 200;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  transition: left 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  left: 0;
+}
+.closeBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sidebarNav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.sidebarNav a:hover {
+  color: #ffb300;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+}
+.sidebarIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.menuBar {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
