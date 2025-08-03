@@ -24,6 +24,11 @@ export const DEMO_MAIN_ARTICLES = [
     summary: 'The championship concluded with a thrilling finish. Here are the highlights and reactions from the teams.',
     image: '/vercel.svg',
   },
+  {
+    title: 'Movie Update: Saiyyara Release',
+    summary: 'The much-anticipated movie "Saiyyara" has been released, receiving rave reviews from critics and audiences alike.',
+    image: '/saiyaara.png',
+  },
 ];
 
 export const DEMO_SIDEBAR_ARTICLES = [
